@@ -11428,6 +11428,11 @@ test-exclude@^6.0.0:
     glob "^7.1.4"
     minimatch "^3.0.4"
 
+testlib-v2@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/testlib-v2/-/testlib-v2-1.0.1.tgz#60d06a53a9088905230575639c05d82a71291930"
+  integrity sha512-IDpI9qvJ6+HsE219V3TJgvyts+L7ocUAzheAoQ3utKBgj83VJmLGGM+T3HqMovtHxSxu3wez+hNuMr0oIlXYXA==
+
 text-table@0.2.0, text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
