@@ -1,18 +1,43 @@
 import React from 'react';
-import { ChakraProvider, Box, Container, Stack } from '@chakra-ui/react';
+import { ChakraProvider, Box, HStack, Heading, Grid, GridItem } from '@chakra-ui/react';
 import Navigation from './components/Navigation';
 import theme from './utils/theme';
+import ColourCard from './components/ColourCard';
+import ChartBox from './components/ChartBox';
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Stack direction={['column', 'row']} spacing='24px'>
+      <Grid
+        templateColumns='repeat(8, 1fr)'
+        templateRows='repeat(3, 1fr)'
+        gap={4}
+        height='100vh'
+      >
         <Navigation />
-        <Box w='40px' h='40px' bg='pink.100'>
-          3j
-        </Box>
+        <GridItem colSpan={6} rowSpan={1}>
 
-      </Stack>
+          <Heading fontSize="20" mt='84px' mb="34px">
+            Knowledge base
+          </Heading>
+
+          <HStack spacing="33px" mb={4}>
+            <ColourCard colour='#74C1ED'>
+              Vocabulary
+            </ColourCard>
+            <ColourCard colour='#FFF6FB'>
+              Phrasal verbs
+            </ColourCard>
+            <ColourCard colour='#FEFBEC'>
+              Grammar
+            </ColourCard>
+          </HStack>
+        </GridItem>
+
+        <ChartBox />
+
+
+      </Grid>
     </ChakraProvider>
   );
 }

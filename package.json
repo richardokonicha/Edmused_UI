@@ -20,6 +20,7 @@
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
+    "testlib-v2": "^1.0.1",
     "typescript": "^4.5.2",
     "web-vitals": "^1.0.1"
   },
