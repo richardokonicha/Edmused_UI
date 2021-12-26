@@ -9,11 +9,18 @@ const links = [
   { name: "chat", icon: <ChatIcon /> },
 ]
 
+
 const Navigation = () => {
   return (
-    <GridItem rowSpan={3} colSpan={2}>
-
-      <VStack py={4} colorScheme='edmused' bg="edmused.500" minHeight="100vh" borderRightRadius="28px" w='237px'>
+    <GridItem colSpan={1} rowSpan={6}>
+      <VStack
+        py={4}
+        // colorScheme='edmused'
+        bg="#5C5C5C"
+        minHeight="100vh"
+        borderRightRadius="28px"
+      // w='237px'
+      >
 
         <Box my={12}>
           <AppIcon icon='edmused' />
@@ -77,9 +84,9 @@ const Navigation = () => {
           </Heading>
         </Box>
       </VStack>
-    </GridItem>
 
+    </GridItem>
   )
 }
 
-export default Navigation
+export default Navigation;
